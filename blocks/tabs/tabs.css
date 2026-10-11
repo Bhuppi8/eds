@@ -1,0 +1,39 @@
+.tabs {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tabs .tabs-list {
+    display: flex;
+    gap: 4px;
+    border-bottom: 2px solid #ccc;
+    overflow-x: auto;
+}
+
+.tabs .tabs-tab {
+    padding: 12px 20px;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    background: none;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.tabs .tabs-tab:hover {
+    background: #f2f2f2;
+}
+
+.tabs .tabs-tab[aria-selected="true"] {
+    border-bottom-color: #3b63fb;
+    color: #3b63fb;
+}
+
+.tabs .tabs-panel {
+    padding: 16px 0;
+}
+
+.tabs .tabs-panel[hidden] {
+    display: none;
+}
